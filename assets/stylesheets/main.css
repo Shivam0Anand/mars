@@ -549,5 +549,8 @@ p {
   .section-main p {
     width: 100%;
   }
+  .section-main a {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
