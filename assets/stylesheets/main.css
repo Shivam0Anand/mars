@@ -503,6 +503,9 @@ p {
 }
 
 @media all and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
   .grid-col2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
