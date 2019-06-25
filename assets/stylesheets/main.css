@@ -424,6 +424,10 @@ p {
   padding: 2rem;
 }
 
+.nav-mob {
+  display: none;
+}
+
 .nav {
   width: 100%;
   display: -webkit-box;
@@ -520,6 +524,18 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+  .nav {
+    display: none;
+  }
+  .nav-mob {
+    display: contents;
+  }
+  .nav-mob a {
+    color: #ffffff;
+  }
+  .btn-info {
+    padding: 0.5rem 2.5rem;
+  }
   .sub-header-main {
     width: 100%;
     margin: 0 auto;
@@ -548,9 +564,6 @@ p {
   }
   .section-main p {
     width: 100%;
-  }
-  .section-main a {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
