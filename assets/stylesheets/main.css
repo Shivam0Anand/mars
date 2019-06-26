@@ -454,18 +454,18 @@ p {
 
 .sub-head-text h2 {
   padding-right: 3rem;
-  padding-left: 9rem;
+  padding-left: 3rem;
 }
 
 .sub-head-text p {
   padding-right: 3rem;
-  padding-left: 9rem;
+  padding-left: 3rem;
   margin-top: 2rem;
 }
 
 .sub-head-text button {
   margin-right: 3rem;
-  margin-left: 9rem;
+  margin-left: 3rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   font-weight: 700;
