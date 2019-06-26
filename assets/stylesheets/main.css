@@ -532,6 +532,7 @@ p {
   }
   .nav-mob {
     display: contents;
+    text-align: center;
   }
   .nav-mob a {
     color: #ffffff;
