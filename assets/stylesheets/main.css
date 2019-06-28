@@ -496,6 +496,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 400;
+  font-family: "PT Sans", sans-serif;
 }
 
 .main-text a {
@@ -510,6 +511,19 @@ p {
 .main-img {
   border-radius: 50%;
   padding: 3.5rem 1rem;
+}
+
+.camps {
+  margin: 1rem 0;
+  padding: 2rem;
+  -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+          box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+  background: -webkit-gradient(linear, left top, right top, from(#380d0d), to(#C66544));
+  background: linear-gradient(to right, #380d0d 0%, #C66544 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
 }
 
 @media all and (max-width: 768px) {
@@ -567,7 +581,7 @@ p {
   .sub-head-text button {
     margin: 1rem auto;
   }
-  .image-sub-head {
+  .main-img {
     width: 100%;
   }
 }
