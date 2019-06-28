@@ -50,3 +50,13 @@
     letter-spacing: 0.04rem;
   }
   
+  // Blockqoute
+
+  .blockqoute{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-style: italic;
+    background: linear-gradient(to right, rgb(90, 90, 90) 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

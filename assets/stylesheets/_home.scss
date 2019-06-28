@@ -75,9 +75,17 @@
 }
 
 // Main
+main{
+    background: linear-gradient(to right bottom, rgb(0, 0, 0) 0%, rgba(124, 106, 106, 0.39) 100%);
+}
+.mob{
+    display: none;
+}
 
 .main-text{
+    margin-top: 1rem; 
     padding-bottom: 2rem;
+    background: linear-gradient(to left top, #aaa 0%, #fff 100%);
     padding: 2rem;
     box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
     h3{
@@ -106,6 +114,7 @@
     }
     
 }
+
 .main-img{
     border-radius: 50%;
     padding: 3.5rem 1rem;
@@ -136,6 +145,11 @@
         width: 100%;
         margin: 0 auto;
     }
+    .grid-col3{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
     .heading-img{
         display: none;
     }
@@ -147,7 +161,14 @@
     .heading{
         padding: 3rem 1.5rem;
     }
-
+    .mob{
+        display: contents;
+        margin: 0;
+        padding: 0;
+    }
+    .order{
+        display: none;
+    }
 
     .nav{
         display: none;

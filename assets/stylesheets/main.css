@@ -383,6 +383,16 @@ p {
   letter-spacing: 0.04rem;
 }
 
+.blockqoute {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-style: italic;
+  background: -webkit-gradient(linear, left top, right top, from(#5a5a5a), to(#aaa));
+  background: linear-gradient(to right, #5a5a5a 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .heading {
   padding: 5rem;
   padding-left: 12rem;
@@ -471,8 +481,20 @@ p {
   height: 100%;
 }
 
+main {
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(rgba(124, 106, 106, 0.39)));
+  background: linear-gradient(to right bottom, black 0%, rgba(124, 106, 106, 0.39) 100%);
+}
+
+.mob {
+  display: none;
+}
+
 .main-text {
+  margin-top: 1rem;
   padding-bottom: 2rem;
+  background: -webkit-gradient(linear, right bottom, left top, from(#aaa), to(#fff));
+  background: linear-gradient(to left top, #aaa 0%, #fff 100%);
   padding: 2rem;
   -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
           box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
@@ -536,6 +558,12 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+  .grid-col3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
   .heading-img {
     display: none;
   }
@@ -546,6 +574,14 @@ p {
   }
   .heading {
     padding: 3rem 1.5rem;
+  }
+  .mob {
+    display: contents;
+    margin: 0;
+    padding: 0;
+  }
+  .order {
+    display: none;
   }
   .nav {
     display: none;
