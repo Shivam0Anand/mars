@@ -280,7 +280,7 @@ p {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 50px;
 }
 
 .grid-col2 {
@@ -363,10 +363,6 @@ p {
 .form-control::placeholder {
   color: #ffffff;
   font-size: 0.9rem;
-}
-
-.padding {
-  padding: 4rem 0;
 }
 
 .heading {
@@ -473,6 +469,47 @@ p {
 .image-sub-head img {
   width: 100%;
   height: 100%;
+}
+
+.main-text {
+  padding-bottom: 2rem;
+  padding: 2rem;
+  -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+          box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+}
+
+.main-text h3 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-family: "Signika", sans-serif;
+  padding: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#C66544), to(rgba(255, 255, 255, 0.445)));
+  background: linear-gradient(to right, #C66544 0%, rgba(255, 255, 255, 0.445) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-text p {
+  letter-spacing: 1.2px;
+  background: -webkit-gradient(linear, left top, right top, from(#380d0d), to(#C66544));
+  background: linear-gradient(to right, #380d0d 0%, #C66544 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+.main-text a {
+  -webkit-text-fill-color: black;
+}
+
+.main-text a:hover {
+  -webkit-text-fill-color: blue;
+  text-decoration: underline;
+}
+
+.main-img {
+  border-radius: 50%;
+  padding: 3.5rem 1rem;
 }
 
 @media all and (max-width: 768px) {

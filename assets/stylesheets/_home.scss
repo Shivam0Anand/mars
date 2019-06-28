@@ -73,6 +73,45 @@
         height: 100%;
     }
 }
+
+// Main
+
+.main-text{
+    padding-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+    h3{
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-family: $font-family;
+        padding: 2rem;
+        background: linear-gradient(to right, $textHeading 0%, rgba(255, 255, 255, 0.445) 100%);
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    p{
+        letter-spacing: 1.2px;
+        background: linear-gradient(to right, rgb(56, 13, 13) 0%, $textHeading 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+    }
+    a{
+        -webkit-text-fill-color: black;
+        &:hover{
+            -webkit-text-fill-color: blue;
+            text-decoration: underline;
+        }
+    }
+    
+}
+.main-img{
+    border-radius: 50%;
+    padding: 3.5rem 1rem;
+}
+
+
+
 // responsive 
 
 @media all and (max-width:768px){
