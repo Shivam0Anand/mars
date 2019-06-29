@@ -1,5 +1,16 @@
 // Header
 
+#toggle,
+.ham {
+  display: none;
+}
+.menu__link {
+  margin-left: 1rem;
+  color: $textLight;
+  &:hover {
+    color: $primary;
+  }
+}
 .heading{
     padding: 5rem;
     padding-left:12rem;
@@ -38,7 +49,7 @@
     display: flex;
     justify-content: flex-end;
     a{
-        color: $textHeading;
+        color: #fff;
         font-weight: 700;
     }
 }
@@ -136,13 +147,22 @@ main{
 }
 
 .contact{
-    margin: 5rem 0;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
     p{
         margin-top: 2rem;
     }
 }
-
-
+.contact-heading{
+    h3{
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-family: $font-family;
+        background: linear-gradient(to right, $textHeading 0%, rgba(255, 255, 255, 0.445) 100%);
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+}
 
 
 // responsive 
@@ -173,9 +193,17 @@ main{
         padding: 3rem 1.5rem;
     }
     .mob{
-        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
         margin: 0;
-        padding: 0;
+        padding: 2rem;
+        text-align: center;
+        i{
+            position: absolute;
+            padding: 10px; 
+            color: black;
+        }
     }
     .order{
         display: none;
@@ -214,8 +242,10 @@ main{
             margin: 1rem auto;
         }
     }
+    main{
+        background: #fff;
+    }
     .main-img{
         width: 100%;
     }
-
 }
