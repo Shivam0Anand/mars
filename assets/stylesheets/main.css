@@ -482,8 +482,12 @@ p {
 }
 
 main {
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(rgba(124, 106, 106, 0.39)));
-  background: linear-gradient(to right bottom, black 0%, rgba(124, 106, 106, 0.39) 100%);
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#FFEFBA));
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .mob {
@@ -493,8 +497,12 @@ main {
 .main-text {
   margin-top: 1rem;
   padding-bottom: 2rem;
-  background: -webkit-gradient(linear, right bottom, left top, from(#aaa), to(#fff));
-  background: linear-gradient(to left top, #aaa 0%, #fff 100%);
+  background: #FFEEEE;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#DDEFBB), to(#FFEEEE));
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 2rem;
   -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
           box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
@@ -546,6 +554,14 @@ main {
   -webkit-text-fill-color: transparent;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
+}
+
+.contact {
+  margin: 5rem 0;
+}
+
+.contact p {
+  margin-top: 2rem;
 }
 
 @media all and (max-width: 768px) {
