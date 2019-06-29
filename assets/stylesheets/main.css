@@ -616,25 +616,63 @@ main {
   .heading {
     padding: 3rem 1.5rem;
   }
-  .mob {
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    text-align: right;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  .right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    position: absolute;
-    margin: 0;
-    padding: 2rem;
-    text-align: center;
   }
-  .mob i {
+  .dropdown {
     position: absolute;
-    padding: 10px;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 81, 0, 0.849);
+    min-width: 160px;
+    overflow: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  .mob {
+    display: contents;
+    margin: 0;
+    padding: 0;
   }
   .order {
     display: none;
+  }
+  main {
+    background: #fff;
   }
   .nav {
     display: none;
@@ -669,9 +707,6 @@ main {
   }
   .sub-head-text button {
     margin: 1rem auto;
-  }
-  main {
-    background: #fff;
   }
   .main-img {
     width: 100%;

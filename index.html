@@ -12,9 +12,18 @@
 </head>
 <body>
     <header class="header">
-        <label class="wrapper mob" for="toggle">
-            <i class="fas fa-bars"></i>
-        </label>
+        <div class="right">
+        <div class="nav-mob dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Ammenities</a>
+                <a href="#">Activities</a>
+                <a href="#">Culture</a>
+                <a href="#">Camps</a>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+        </div>
         <nav class="wrapper nav">
             <input id="toggle" type="checkbox" name="" value="" />
             <ul class="menu">
@@ -44,6 +53,12 @@
         </div>
         <section>
             <div class="sub-header-main">
+                    <div class="nav-mob">
+                        <ul>
+                            <button class="btn btn-info"><li><a href="#">Info</a></li></button>
+                            <button class="btn"><li><a href="#">Contacts</a></li></button>
+                        </ul>
+                    </div>
                     <div class="wrapper nav">
                         <ul>
                             <button class="btn"><li><a href="#">Team</a></li></button>
@@ -232,5 +247,29 @@
             </div>
         </section>
     </main>
+
+    <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            
+
 </body>
 </html>
