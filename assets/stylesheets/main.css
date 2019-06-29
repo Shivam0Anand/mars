@@ -627,7 +627,7 @@ main {
     cursor: pointer;
   }
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #C66544;
   }
   .right {
     display: -webkit-box;
