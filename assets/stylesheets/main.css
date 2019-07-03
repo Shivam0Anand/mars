@@ -286,8 +286,16 @@ p {
 .grid-col2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  grid-gap: 2rem;
+}
+
+.grid-col2-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   grid-gap: 2rem;
 }
 
@@ -320,7 +328,7 @@ p {
   padding: 0.5rem 1rem;
   margin: 1rem 0.5rem;
   color: #fff;
-  background: rgba(255, 81, 0, 0.644);
+  background: #c66544;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 300;
@@ -333,8 +341,8 @@ p {
 }
 
 .btn-primary {
-  border: 1px solid #C66544;
-  color: #C66544;
+  border: 1px solid #c66544;
+  color: #c66544;
 }
 
 .form-control {
@@ -387,10 +395,7 @@ p {
   text-align: center;
   padding-bottom: 1rem;
   font-style: italic;
-  background: -webkit-gradient(linear, left top, right top, from(#5a5a5a), to(#aaa));
-  background: linear-gradient(to right, #5a5a5a 0%, #aaa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: black;
 }
 
 #toggle,
@@ -408,20 +413,25 @@ p {
 }
 
 .heading {
-  padding: 5rem;
+  padding-top: 8rem;
   padding-left: 12rem;
   padding-right: 0;
-  color: #C66544;
-  font-family: "Signika", sans-serif;
+  color: #c66544;
+  font-family: "Source Serif Pro", serif;
 }
 
 .heading h1 {
-  font-size: 6.5rem;
+  margin-top: 4rem;
+  font-size: 4rem;
 }
 
-.heading h3 {
-  font-size: 2.5rem;
-  line-height: 0;
+.hero-heading {
+  font-size: 2rem;
+  padding-bottom: 5rem;
+}
+
+.heading-text {
+  padding-top: 3rem;
 }
 
 .grid-col2 {
@@ -460,48 +470,8 @@ p {
   font-weight: 700;
 }
 
-.sub-head-text {
-  margin: 0 2rem;
-  margin-top: 7rem;
-  margin-bottom: 4rem;
-  -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
-          box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
-  padding: 1rem 4rem;
-  color: #C66544;
-  font-family: "Signika", sans-serif;
-}
-
-.sub-head-text h2 {
-  padding-right: 3rem;
-  padding-left: 3rem;
-}
-
-.sub-head-text p {
-  padding-right: 3rem;
-  padding-left: 3rem;
-  margin-top: 2rem;
-}
-
-.sub-head-text button {
-  margin-right: 3rem;
-  margin-left: 3rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  font-weight: 700;
-}
-
-.image-sub-head img {
-  width: 100%;
-  height: 100%;
-}
-
 main {
-  background: #ffefba;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffefba));
-  background: linear-gradient(to right, #ffffff, #ffefba);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 8rem 0;
 }
 
 .mob {
@@ -520,22 +490,16 @@ main {
 .main-text h3 {
   font-size: 2.2rem;
   letter-spacing: 2px;
-  font-family: "Signika", sans-serif;
-  padding: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#C66544), to(rgba(255, 255, 255, 0.445)));
-  background: linear-gradient(to right, #C66544 0%, rgba(255, 255, 255, 0.445) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Source Serif Pro", serif;
+  color: #c66544;
+  padding: 2rem 0;
 }
 
 .main-text p {
   letter-spacing: 1.2px;
-  background: -webkit-gradient(linear, left top, right top, from(#380d0d), to(#C66544));
-  background: linear-gradient(to right, #380d0d 0%, #C66544 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #363636;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .main-text a {
@@ -547,22 +511,34 @@ main {
   text-decoration: underline;
 }
 
+section {
+  margin-top: 8rem;
+}
+
+.order {
+  margin: auto;
+}
+
 .main-img {
   border-radius: 50%;
   padding: 3.5rem 1rem;
 }
 
+.camp-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Source Serif Pro", serif;
+  color: #c66544;
+}
+
 .camps {
-  margin: 1rem 0;
-  padding: 2rem;
+  margin-top: 3rem;
+  padding: 5rem 2rem;
   -webkit-box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
           box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
-  background: -webkit-gradient(linear, left top, right top, from(#380d0d), to(#C66544));
-  background: linear-gradient(to right, #380d0d 0%, #C66544 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .contact {
@@ -577,9 +553,9 @@ main {
 .contact-heading h3 {
   font-size: 2.2rem;
   letter-spacing: 2px;
-  font-family: "Signika", sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#C66544), to(rgba(255, 255, 255, 0.445)));
-  background: linear-gradient(to right, #C66544 0%, rgba(255, 255, 255, 0.445) 100%);
+  font-family: "Source Serif Pro", serif;
+  background: -webkit-gradient(linear, left top, right top, from(#c66544), to(rgba(255, 255, 255, 0.445)));
+  background: linear-gradient(to right, #c66544 0%, rgba(255, 255, 255, 0.445) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -623,7 +599,7 @@ main {
   }
   .dropbtn:hover,
   .dropbtn:focus {
-    background-color: #C66544;
+    background-color: #c66544;
   }
   .right {
     display: -webkit-box;
@@ -640,7 +616,7 @@ main {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 81, 0, 0.849);
+    background-color: #ef4534;
     min-width: 160px;
     overflow: auto;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
