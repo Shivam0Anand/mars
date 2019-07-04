@@ -570,6 +570,10 @@ section .main-text {
   font-family: "Montserrat", sans-serif;
 }
 
+.culture-padding {
+  padding: 7rem 0;
+}
+
 .contact {
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -640,19 +644,18 @@ section .main-text {
   .heading {
     padding: 3rem 1.5rem;
   }
-  .dropbtn {
-    background-color: transparent;
-    color: white;
+  .dropbtns {
     position: absolute;
+    padding: 0;
+  }
+  .dropbtn {
+    background: #d6895e;
+    color: white;
     text-align: right;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: #c66544;
   }
   .right {
     display: -webkit-box;

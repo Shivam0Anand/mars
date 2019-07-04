@@ -140,7 +140,9 @@ section {
   border-radius: 8px;
   font-family: $font-family-text;
 }
-
+.culture-padding {
+  padding: 7rem 0;
+}
 .contact {
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -211,10 +213,13 @@ section {
   .heading {
     padding: 3rem 1.5rem;
   }
-  .dropbtn {
-    background-color: transparent;
-    color: white;
+  .dropbtns {
     position: absolute;
+    padding: 0;
+  }
+  .dropbtn {
+    background: #d6895e;
+    color: white;
     text-align: right;
     padding: 16px;
     font-size: 16px;
@@ -222,10 +227,6 @@ section {
     cursor: pointer;
   }
 
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: $textHeading;
-  }
   .right {
     display: flex;
     justify-content: flex-end;
