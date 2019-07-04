@@ -1,16 +1,30 @@
 // Button Styles
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   margin: 1rem 0.5rem;
   color: #fff;
   background: rgb(198, 101, 68);
-  border-radius: 50px;
-  font-size: 1.2rem;
-  font-weight: 300;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 100;
   letter-spacing: 0.04rem;
+  // font-family: $font-family;
+
   cursor: pointer;
+  border: 1px solid rgb(198, 101, 68);
+  a {
+    color: #fff;
+    font-weight: 700;
+    &:hover {
+      color: rgb(198, 101, 68);
+    }
+  }
   &:hover {
-    background: #ef4534;
+    a {
+      color: rgb(198, 101, 68);
+    }
+    background: white;
+    border: 1px solid rgb(198, 101, 68);
   }
 }
 .btn-primary {

@@ -14,7 +14,6 @@
 
 .heading {
   padding-top: 8rem;
-  padding-left: 12rem;
   padding-right: 0;
   color: $textHeading;
   font-family: $font-family;
@@ -55,50 +54,67 @@
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
-  a {
-    color: #fff;
-    font-weight: 700;
+  li {
+    font-size: 0.9rem;
   }
 }
 
 // Main
 main {
-  margin: 8rem 0;
+  margin-bottom: 3rem;
 }
 .mob {
   display: none;
 }
+section {
+  &.colored-section {
+    background: #fff6f1;
+    margin: 0;
+  }
+  .main-text {
+    background: transparent;
+  }
+}
+.camps-list {
+  padding: 3rem 0rem;
+}
 
 .main-text {
-  margin-top: 1rem;
-  padding-bottom: 2rem;
   background: #fff;
-  padding: 2rem;
-  box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
+  padding: 3rem 0rem;
+  // box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
   h3 {
     font-size: 2.2rem;
-    letter-spacing: 2px;
     font-family: $font-family;
     color: #c66544;
-    padding: 2rem 0;
+    padding-bottom: 0.4rem;
   }
   p {
-    letter-spacing: 1.2px;
-    color: rgb(54, 54, 54);
+    font-size: 1.05rem;
+    color:#737373;
     font-weight: 400;
     font-family: $font-family-text;
   }
   a {
-    -webkit-text-fill-color: black;
+    // background: rgb(255, 235, 210);
+    color: #fca016;
+    text-decoration: underline;
+    padding: 0 0.1rem;
     &:hover {
-      -webkit-text-fill-color: blue;
+      -webkit-text-fill-color: rgb(255, 123, 0);
       text-decoration: underline;
     }
   }
 }
-section {
-  margin-top: 8rem;
+
+.main-text-left-pad {
+  padding-left: 2.5rem;
 }
+
+.main-text-right-pad {
+  padding-right: 2.5rem;
+}
+
 .order {
   margin: auto;
 }
@@ -112,15 +128,16 @@ section {
 .camp-heading {
   font-size: 2.2rem;
   text-align: center;
-  letter-spacing: 2px;
   font-family: $font-family;
   color: #c66544;
 }
 .camps {
   margin-top: 3rem;
   padding: 5rem 2rem;
+  background: #c66544;
   box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
   font-weight: 400;
+  border-radius: 8px;
   font-family: $font-family-text;
 }
 
@@ -131,16 +148,14 @@ section {
     margin-top: 2rem;
   }
 }
+.contact-wrapper {
+  padding: 3rem 0rem;
+}
 .contact-heading {
   h3 {
     font-size: 2.2rem;
-    letter-spacing: 2px;
     font-family: $font-family;
-    background: linear-gradient(
-      to right,
-      $textHeading 0%,
-      rgba(255, 255, 255, 0.445) 100%
-    );
+    text-align: center;
   }
 }
 
