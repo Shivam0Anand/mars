@@ -91,7 +91,7 @@ section {
   }
   p {
     font-size: 1.05rem;
-    color:#737373;
+    color: #737373;
     font-weight: 400;
     font-family: $font-family-text;
   }
@@ -158,6 +158,10 @@ section {
     text-align: center;
   }
 }
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
 
 // responsive
 
@@ -165,10 +169,25 @@ section {
   html {
     font-size: 12px;
   }
+  .hero {
+    .wrapper {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
   .grid-col2 {
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
+  }
+  .wrapper {
+    padding: 0 20px;
+  }
+  .main-text-right-pad {
+    padding-right: 0;
+  }
+  .main-text-left-pad {
+    padding-left: 0;
   }
 
   .grid-col2-1 {
