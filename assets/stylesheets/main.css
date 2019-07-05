@@ -521,7 +521,7 @@ section .main-text {
 
 .main-text {
   background: #fff;
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .main-text h3 {
@@ -598,6 +598,11 @@ section .main-text {
   color: white;
   font-family: "Roboto Slab", serif;
   text-align: center;
+}
+
+.camps p a {
+  color: white;
+  text-decoration: underline;
 }
 
 .culture-padding {

@@ -99,7 +99,7 @@ section {
 
 .main-text {
   background: #fff;
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
   // box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
   h3 {
     font-size: 2.2rem;
@@ -166,6 +166,10 @@ section {
     color: white;
     font-family: $font-family;
     text-align: center;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   }
 }
 .culture-padding {
