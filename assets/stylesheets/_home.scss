@@ -22,12 +22,19 @@
     font-size: 4rem;
   }
 }
+.hero-wrapper {
+  padding-right: 10px;
+}
 .hero-heading {
   font-size: 2rem;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  background: #fff6f1;
+  padding: 0.8rem;
+  // color: $orangeTheme;
 }
 .heading-text {
-  padding-top: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
 }
 
 .grid-col2-1,
@@ -47,15 +54,23 @@
 }
 .nav-mob {
   display: none;
+  font-family: $font-family-text;
 }
 .nav {
   width: 100%;
   position: absolute;
-  margin-top: 1rem;
+  background: $textHeading;
+  color: white;
+  font-family: $font-family;
+  // margin-top: 1rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   li {
     font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+    color: white;
   }
 }
 
@@ -77,6 +92,9 @@ section {
 }
 .camps-list {
   padding: 3rem 0rem;
+  .start-new {
+    margin-top: 2rem;
+  }
 }
 
 .main-text {
@@ -131,17 +149,28 @@ section {
   font-family: $font-family;
   color: #c66544;
 }
+
 .camps {
   margin-top: 3rem;
   padding: 5rem 2rem;
-  background: #c66544;
+  background: #ff7b00;
   box-shadow: 2px 2px 20px 2px rgba(206, 206, 206, 0.445);
   font-weight: 400;
   border-radius: 8px;
   font-family: $font-family-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+    color: white;
+    font-family: $font-family;
+    text-align: center;
+  }
 }
 .culture-padding {
   padding: 7rem 0;
+  padding-left: 2.5rem;
 }
 .contact {
   margin-bottom: 5rem;
